@@ -140,23 +140,23 @@ describe("Services", () => {
   //   cy.get(doneBtn).click();
   // });
 
-  it("Prepaid Top Up - Non UM - Successful", () => {
-    services();
-    cy.get(phoneInternetBtn).click();
-    cy.get(Maxislogo).click();
-    cy.get(prepaidMaxis10).click();
-    cy.get("input[name = mobileNo").type(MaxismobileNo);
-    cy.get(payNowBtn).click();
-    cy.wait(2000);
-    cy.get(payNowWalletBtn).click();
-    cy.get("input[name = gopin]").type(gopin);
-    cy.get(closeBtn).click();
-    cy.wait(2000);
-    cy.get("input[name = fav]").check();
-    cy.get("input[name = description]").type("Maxis prepaid topup");
-    cy.get(saveBtn).click();
-    cy.get(doneBtn).click();
-  });
+  // it("Prepaid Top Up - Non UM - Successful", () => {
+  //   services();
+  //   cy.get(phoneInternetBtn).click();
+  //   cy.get(Maxislogo).click();
+  //   cy.get(prepaidMaxis10).click();
+  //   cy.get("input[name = mobileNo").type(MaxismobileNo);
+  //   cy.get(payNowBtn).click();
+  //   cy.wait(2000);
+  //   cy.get(payNowWalletBtn).click();
+  //   cy.get("input[name = gopin]").type(gopin);
+  //   cy.get(closeBtn).click();
+  //   cy.wait(2000);
+  //   cy.get("input[name = fav]").check();
+  //   cy.get("input[name = description]").type("Maxis prepaid topup");
+  //   cy.get(saveBtn).click();
+  //   cy.get(doneBtn).click();
+  // });
 
  
 });
